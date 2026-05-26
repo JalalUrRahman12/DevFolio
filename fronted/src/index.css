@@ -1,0 +1,70 @@
+/* Slide-down modal animation for upload modal */
+@keyframes slideDownModal {
+  0% { transform: translateY(-60px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.animate-slideDownModal {
+  animation: slideDownModal 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* General UI/UX improvements */
+body, html {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+input, select, textarea {
+  outline: none;
+  border-radius: 0.375rem;
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  background: #fff;
+  color: #1e293b;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #2563eb33;
+}
+
+label {
+  font-weight: 500;
+  color: #334155;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #1d4ed8 0%, #0e7490 100%);
+}
+
+.card-hover:hover {
+  box-shadow: 0 8px 32px 0 rgba(37,99,235,0.10);
+  border-color: #2563eb;
+}
+
+/* Add spacing for sections */
+section {
+  margin-bottom: 2.5rem;
+}
+
+/* Utility for muted text */
+.text-muted-foreground {
+  color: #64748b;
+}
